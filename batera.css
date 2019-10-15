@@ -1,0 +1,17 @@
+#set{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+#set div{
+    margin: 15px;
+    border: 3px solid black;
+    width: 10vw;
+    height: 25vh;
+
+}
+#set div image,span{
+    display: block;
+    margin-left: 5vw;
+}
