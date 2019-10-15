@@ -1,5 +1,5 @@
 var x = null
-var keymap={
+const keymap={
     'h':'audios/bumbo.wav',
     'c':'audios/caixa.wav',
     '?':'audios/cym.wav',
@@ -9,13 +9,10 @@ var keymap={
     '?':'audios/tom2.wav',
     '?':'audios/tom3.wav'
 }
-
-function findKey(event){
+document.addEventListener("keypress",(event)=>{
     x=keymap[event.key]
     if(x!==undefined){
-        let novo = new Audio(keymap[x])
+        let novo=new Audio(keymap[event.key])
         novo.play()
     }
-}
-
-document.addEventListener("keypress",findKey)
+})
