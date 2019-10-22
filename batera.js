@@ -1,5 +1,3 @@
-var x = null
-
 const keymap={
     'h':'audios/bumbo.wav',
     'c':'audios/caixa.wav',
@@ -12,6 +10,5 @@ const keymap={
 }
 
 document.addEventListener("keypress",(event)=>{
-    let novo=new Audio(keymap[event.key])
-    novo.play()
+    new Audio(keymap[event.key]).play()
 })
